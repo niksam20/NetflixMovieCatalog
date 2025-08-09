@@ -4,6 +4,7 @@ venv/
 .idea/
 
 # Terraform files
+.terraform/
 *.tfstate
 *.tfstate.backup
 .terraform/
