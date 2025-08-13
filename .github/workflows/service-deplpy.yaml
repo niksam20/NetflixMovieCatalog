@@ -33,3 +33,7 @@ jobs:
       - name: Run deploy script on EC2
         run: |
           ssh -o StrictHostKeyChecking=no -i mykey.pem ubuntu@$EC2_PUBLIC_IP "bash ~/app/deploy.sh"
+
+      - name: Start the service
+        run: |
+          ssh -i mykey.pem ubuntu@$EC2_PUBLIC_IP "bash ~/app/deploy.sh"
